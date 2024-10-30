@@ -8,7 +8,7 @@ public class atividade6 {
     	
     	String nome, cargo;
         int opcao;
-        double salario, novosalario, reajuste;
+        double salario, novoSalario, reajuste;
 
         Scanner leia = new Scanner(System.in);
         
@@ -59,13 +59,13 @@ public class atividade6 {
                 return;
         }
 
-        novosalario = salario + (reajuste * salario);
+        novoSalario = salario + (reajuste * salario);
 
         System.out.printf("Nome: %s\n", nome);
         System.out.printf("Cargo: %s\n", cargo);
         System.out.printf("Salário anterior: R$ %.2f\n", salario);
         System.out.printf("Reajuste: %.0f%%\n", reajuste * 100);
-        System.out.printf("Novo Salário: R$ %.2f\n", novosalario);
+        System.out.printf("Novo Salário: R$ %.2f\n", novoSalario);
 
         leia.close();
     }
